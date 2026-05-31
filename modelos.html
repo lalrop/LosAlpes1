@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelos | Parque Los Alpes</title>
+  <meta name="description" content="Descubre los 5 modelos de departamentos y casas en Parque Los Alpes. Desde 65m² hasta 140m².">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo.png" alt="Parque Los Alpes" onerror="this.textContent='Parque Los Alpes'">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="proyecto.html" class="nav-link">Proyecto</a></li>
+        <li><a href="modelos.html" class="nav-link active">Modelos</a></li>
+        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <h1>Nuestros Modelos</h1>
+        <p>Departamentos y casas diseñadas para cada etapa de tu vida.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="depto">Departamentos</button>
+          <button class="filter-btn" data-filter="casa">Casas</button>
+        </div>
+
+        <div class="model-grid" id="modelGrid">
+          <div class="model-card" data-type="depto" data-model="lorem">
+            <div class="model-card-image">
+              <img src="Imagenes/Decoracion piloto.jpeg" alt="Modelo Lorem">
+              <span class="model-badge">Departamentos</span>
+            </div>
+            <div class="model-card-content">
+              <h3>Lorem</h3>
+              <div class="model-meta">
+                <span>65m²</span>
+                <span>2 Dormitorios</span>
+              </div>
+              <div class="model-card-footer">
+                <span class="model-price">Desde $XX.XXX.XXX</span>
+                <button class="btn btn-primary btn-sm" onclick="openModelModal('lorem')">Ver más</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="model-card" data-type="depto" data-model="ipsum">
+            <div class="model-card-image">
+              <img src="Imagenes/Decoracion piloto.jpeg" alt="Modelo Ipsum">
+              <span class="model-badge">Departamentos</span>
+            </div>
+            <div class="model-card-content">
+              <h3>Ipsum</h3>
+              <div class="model-meta">
+                <span>85m²</span>
+                <span>3 Dormitorios</span>
+              </div>
+              <div class="model-card-footer">
+                <span class="model-price">Desde $XX.XXX.XXX</span>
+                <button class="btn btn-primary btn-sm" onclick="openModelModal('ipsum')">Ver más</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="model-card" data-type="depto" data-model="dolor">
+            <div class="model-card-image">
+              <img src="Imagenes/Decoracion piloto.jpeg" alt="Modelo Dolor">
+              <span class="model-badge">Departamentos</span>
+            </div>
+            <div class="model-card-content">
+              <h3>Dolor</h3>
+              <div class="model-meta">
+                <span>100m²</span>
+                <span>3 Dormitorios</span>
+              </div>
+              <div class="model-card-footer">
+                <span class="model-price">Desde $XX.XXX.XXX</span>
+                <button class="btn btn-primary btn-sm" onclick="openModelModal('dolor')">Ver más</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="model-card" data-type="casa" data-model="sit">
+            <div class="model-card-image">
+              <img src="Planos/Saboya.jpeg" alt="Modelo Sit">
+              <span class="model-badge">Casas</span>
+            </div>
+            <div class="model-card-content">
+              <h3>Sit</h3>
+              <div class="model-meta">
+                <span>120m²</span>
+                <span>3+1 Dormitorios</span>
+              </div>
+              <div class="model-card-footer">
+                <span class="model-price">Desde $XX.XXX.XXX</span>
+                <button class="btn btn-primary btn-sm" onclick="openModelModal('sit')">Ver más</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="model-card" data-type="casa" data-model="amet">
+            <div class="model-card-image">
+              <img src="Planos/Saboya.jpeg" alt="Modelo Amet">
+              <span class="model-badge">Casas</span>
+            </div>
+            <div class="model-card-content">
+              <h3>Amet</h3>
+              <div class="model-meta">
+                <span>140m²</span>
+                <span>4+1 Dormitorios</span>
+              </div>
+              <div class="model-card-footer">
+                <span class="model-price">Desde $XX.XXX.XXX</span>
+                <button class="btn btn-primary btn-sm" onclick="openModelModal('amet')">Ver más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Solicita más información</h2>
+        <p>Contáctanos y te ayudaremos a encontrar el modelo ideal para ti.</p>
+        <a href="contacto.html" class="btn btn-accent btn-lg">Contactar</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modelModal">
+    <div class="modal-backdrop" onclick="closeModelModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModelModal()">×</button>
+      <div class="modal-gallery">
+        <div class="modal-gallery-main">
+          <img id="modalMainImage" src="Imagenes/Decoracion piloto.jpeg" alt="">
+        </div>
+        <div class="modal-gallery-thumbs" id="modalThumbs">
+          <img src="Imagenes/Decoracion piloto.jpeg" alt="" onclick="changeModalImage(this)">
+          <img src="Planos/Saboya.jpeg" alt="" onclick="changeModalImage(this)">
+          <img src="Imagenes/VIsta aerea.jpeg" alt="" onclick="changeModalImage(this)">
+          <img src="Imagenes/Decoracion piloto.jpeg" alt="" onclick="changeModalImage(this)">
+        </div>
+      </div>
+      <div class="modal-details">
+        <div class="modal-modelo-header">
+          <h2 id="modalTitle">Modelo</h2>
+          <p class="text-secondary" id="modalType">Tipo</p>
+        </div>
+        <div class="modal-specs">
+          <div class="spec-item">
+            <span class="spec-value" id="modalSize">XX</span>
+            <span class="spec-label">m²</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value" id="modalRooms">X</span>
+            <span class="spec-label">Dormitorios</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value" id="modalBaths">X</span>
+            <span class="spec-label">Baños</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value" id="modalParking">X</span>
+            <span class="spec-label">Estacionamientos</span>
+          </div>
+        </div>
+        <h4 style="margin-bottom: 16px;">Descripción</h4>
+        <p class="text-secondary mb-3" id="modalDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h4 style="margin-bottom: 16px;">Planos</h4>
+        <div style="background: var(--color-bg-light); padding: 24px; border-radius: var(--border-radius); margin-bottom: 32px;">
+          <img src="Planos/Saboya.jpeg" alt="Plano" style="width: 100%; max-width: 500px; margin: 0 auto; display: block;">
+        </div>
+        <a href="contacto.html" class="btn btn-primary btn-lg" style="width: 100%;">Solicitar información</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="Logo.png" alt="Parque Los Alpes" style="height: 40px; margin-bottom: 16px; background: transparent;" onerror="this.style.display='none'">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyecto.html">Proyecto</a></li>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p>+56 XX XXX XXXX</p>
+          <p>info@parquelosalpes.cl</p>
+          <p>Osorno, Chile</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Parque Los Alpes. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

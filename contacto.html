@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Parque Los Alpes</title>
+  <meta name="description" content="Contáctanos para más información sobre nuestros departamentos y casas en Osorno.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo.png" alt="Parque Los Alpes" onerror="this.textContent='Parque Los Alpes'">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="proyecto.html" class="nav-link">Proyecto</a></li>
+        <li><a href="modelos.html" class="nav-link">Modelos</a></li>
+        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <h1>Contáctanos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid mb-4">
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h4>Teléfono</h4>
+            <p>+56 XX XXX XXXX</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h4>Email</h4>
+            <p>info@parquelosalpes.cl</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h4>Dirección</h4>
+            <p>Osorno, Región de los Lagos, Chile</p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de tu empresa">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="rut">RUT Empresa</label>
+                <input type="text" id="rut" name="rut" class="form-input" placeholder="12.345.678-9">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+56 9 XXXX XXXX">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="interes">Modelo de interés</label>
+              <select id="interes" name="interes" class="form-select">
+                <option value="">Selecciona un modelo</option>
+                <option value="lorem">Lorem - 65m²</option>
+                <option value="ipsum">Ipsum - 85m²</option>
+                <option value="dolor">Dolor - 100m²</option>
+                <option value="sit">Sit - 120m²</option>
+                <option value="amet">Amet - 140m²</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="tipo">Tipo de consulta</label>
+              <select id="tipo" name="tipo" class="form-select">
+                <option value="">Selecciona una opción</option>
+                <option value="comprar">Quiero comprar</option>
+                <option value="vender">Quiero vender</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form-textarea" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Ubicación</h2>
+          <p>Visítanos en Osorno, Región de los Lagos.</p>
+        </div>
+        <div class="location-map" style="max-width: 1000px; margin: 0 auto;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49995.95755269172!2d-73.14569887355469!3d-40.57430119999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96140a1659e653d5%3A0x5c6e2d5e7e6b6b6b!2sOsorno%2C%20Los%20R%C3%ADos%2C%20Chile!5e0!3m2!1ses!2sus!4v1700000000000!5m2!1ses!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="Logo.png" alt="Parque Los Alpes" style="height: 40px; margin-bottom: 16px; background: transparent;" onerror="this.style.display='none'">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyecto.html">Proyecto</a></li>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p>+56 XX XXX XXXX</p>
+          <p>info@parquelosalpes.cl</p>
+          <p>Osorno, Chile</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Parque Los Alpes. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
